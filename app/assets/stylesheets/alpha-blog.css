@@ -33,6 +33,7 @@ hr{
 /* ------------header----------- */
 header {
   height: 100vh;
+  color: white;
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/images/bg.jpg);
   background-position: center;
   background-size: cover;
