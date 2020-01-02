@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root 'pages#homepage'
   get 'about', to: 'pages#about'
   get 'article_news', to: 'articles#new'
+  get 'author_new', to: 'authors#new'
 
   resources :articles
+  resources :authors
 
 end

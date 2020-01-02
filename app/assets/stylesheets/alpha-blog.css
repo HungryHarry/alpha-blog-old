@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-body {
+ body {
   font-family: 'Open Sans Condensed';
   font-size: 18px;
 }
@@ -18,7 +18,11 @@ h1{
   position: absolute;
   margin-left: 2%;
   top: 12vh;
+  }
+.page_title{
+    margin-left: 5%;
 }
+
 h2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -32,9 +36,11 @@ hr{
 }
 /* ------------header----------- */
 header {
+  font-family: 'Open Sans Condensed';
+  font-size: 18px;
   height: 100vh;
   color: white;
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/images/bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/bg.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -119,3 +125,11 @@ header div a{
 .btn_leer:hover{
   background-color: #ff0066;
 }
+
+.error_msg{
+  font-weight: 300;
+  font-size: 13px;
+}
+.form_div{
+  margin-left: 5%;
+  text-decoration: none;
