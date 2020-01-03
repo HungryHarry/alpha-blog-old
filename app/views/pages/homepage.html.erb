@@ -8,17 +8,11 @@
 <body>
     <!-- --------------------------------->
     <header>
-      <img id="logo" src="/images/kai_logo.png">
-      <h1 id="page_header">Kai <br>Nass</h1>
-      <ul class="header_ul">
-        <li class="header_li"><p><%= link_to 'Homepage', root_path %></p></li>
-        <li class="header_li"><p><%= link_to 'About', about_path %></p></li>
-        <li class="header_li"><a href="#">Imprint</a></li>
-      </ul>
+      <%= render 'top_navigation' %>
 
       <div class="header_div">
         <h2>This is your Homepage.<br>Mate.</h2>
-        <p class="btn btn_voll"><%= link_to 'Artikel', article_news_path %></p>
+        <p class="btn btn_voll"><%= link_to 'Artikel', articles_path %></p>
         <p class="btn btn_leer"><%= link_to 'Author', author_new_path %></p>
         <p class="btn btn_leer">Write me</p>
       </div>

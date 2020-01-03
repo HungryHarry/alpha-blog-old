@@ -6,32 +6,9 @@
   <title>Alpha-Blog</title>
 </head>
 <header>
-  <h1 class="page_title">Create an article</h1>
-  <hr>
-  <div class="form_div">
-    <% if @article.errors.any? %>
-      <p>The following errors prevented the article from getting created</p>
-      <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li class="error_msg"><%= msg %></li>
-        <% end %>
-      </ul>
-  <% end %>
-    <%= form_for @article do |f| %>
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title%>
-    </p>
-    <p>
-      <%= f.label :description %><br>
-      <%= f.text_area :description%>
-    </p>
-    <p>
-      <%= f.submit "Submit Article" %>
-    </p>
-    </div>
-
-  <% end %>
-  
-<%= button_to "Article overview", articles_path, :method => "get" %>
+  <%= render 'pages/top_navigation' %>
+  <div class="centered_content">
+    <h1 class="page_title">Create an article</h1>
+      <%= render 'form' %>
+  </div>
 </header>

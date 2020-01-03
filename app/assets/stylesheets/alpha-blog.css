@@ -34,6 +34,11 @@ hr{
   width: 150px;
   margin: 40px auto;
 }
+
+.full_line{
+  width: 90%;
+  margin: 50px auto;
+}
 /* ------------header----------- */
 header {
   font-family: 'Open Sans Condensed';
@@ -133,3 +138,8 @@ header div a{
 .form_div{
   margin-left: 5%;
   text-decoration: none;
+}
+.centered_content{
+  width: 1000px;
+  margin: 0 auto;
+}
