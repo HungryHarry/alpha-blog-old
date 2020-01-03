@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <title>Alpha-Blog</title>
+</head>
+
+<header>
+  <h1 class="page_title">Listing all articles</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Edit</th>
+      </tr>
+
+      <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td><%= button_to "Edit #{article.id}", edit_article_path(article), :method => "get" %></td>
+        <td><%= button_to "Show #{article.id}", article_path(article), :method => "get" %></td>
+
+      </tr>
+      <% end %>
+    </table>
+</header>

@@ -15,4 +15,12 @@
 <p>
   Description: <%= @article.description %>
 </p>
+<p>
+  <%= button_to "Edit Article", edit_article_path(@article), :method => "get" %>
+</p>
+
+<p>
+  <%= button_to "Article overview", articles_path, :method => "get" %>
+</p>
+
 </header>

@@ -6,8 +6,7 @@
   <title>Alpha-Blog</title>
 </head>
 <header>
-  <h1 class="page_title">Create an article</h1>
-  <hr>
+  <h1 class="page_title">Edit an article</h1>
   <div class="form_div">
     <% if @article.errors.any? %>
       <p>The following errors prevented the article from getting created</p>
@@ -29,9 +28,11 @@
     <p>
       <%= f.submit "Submit Article" %>
     </p>
+    <% end %>
     </div>
+      <div class="form_div">
 
-  <% end %>
-  
-<%= button_to "Article overview", articles_path, :method => "get" %>
+          <%= button_to "Article overview", articles_path, :method => "get" %>
+
+      </div>
 </header>
